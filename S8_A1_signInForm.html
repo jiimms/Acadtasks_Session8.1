@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<head>
+		<TITLE>
+			Session8 Assignments
+		</TITLE>
+		<style type="text/css">
+		body {
+			background-image: url("bluebg.jpg");
+		}
+			#wrapper {
+				width: 70%;
+				border: 2px solid gray;
+				background-color: #EEEEEE;
+				margin-left: auto;
+				margin-right: auto;
+				overflow: hidden;
+				padding: 30px 15px;
+				/*padding-bottom: 30px;*/
+			}
+			header {
+				height: 20px;
+				background-color: gray;
+			}
+			h1 {
+				padding-left: 15px;
+			}
+
+			h3 {
+				margin-top: 10px;
+			}
+
+			#newUser {
+				float: left;
+				width: 48%;
+				/*border: 2px solid black;*/
+				height: 280px;
+			}
+
+			#oldUser {
+				float: right;
+				width: 48%;
+				background-color: #234465;
+				border: 2px solid black;
+				height: 280px;
+				color: white;
+			}
+
+			form {
+				width: 100%;
+				padding-left: 15px;
+
+			}
+
+			.details {
+				width: 90%;
+				padding: 5px;
+			}
+			#newUser input {
+				border: 3px solid #E56668;
+			}
+			#register {
+				padding: 5px 20px;
+				color: #234465;
+				font-weight: bold;
+				border: 2px solid #234465;
+				background-color: rgba(255, 255,255,0.5);
+				float: right;
+				margin-right: 20px;
+			}
+
+			#login {
+				padding: 5px 20px;
+				color: white;
+				font-weight: bold;
+				border: 2px solid gold;
+				background-color: #234465;
+				float: right;
+				margin-right: 25px;
+				font-size: 17px;
+			}
+			#forgot {
+				float: right;
+				font-size: 11px;
+				color: white;
+				margin-right: 25px;
+				margin-top: 8px;
+			}
+		</style>	
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<header></header>
+			<h1>Enter the System</h1>
+			<div id ="newUser">
+				
+				<form action = "register.html" method ="GET" >
+					<h3>ARE YOU NEW? REGISTER</h3>
+					<input class = "details" type ="text" id="name" name="userName" placeholder ="User Name"><br><br>
+					<input class = "details" type ="email" id="mail" name="userEmail" placeholder= "Email"><br><br>
+					<input class = "details" type ="password" id="pwd" name="userpwd" placeholder= "Password"><br><br>
+					<input  class = "details" type ="password" id="cpwd" name="cuserpwd" placeholder= "Confirm Password"><br><br>
+					<button type ="submit" id="register">Register</button>
+				</form>
+			</div>	
+
+			<aside id="oldUser">
+				
+				<form action = "login.html" method ="GET">
+					
+					<h3>ALREADY A STUDENT? LOGIN</h3>
+					<input class = "details" type ="text" id="username" name="userName" placeholder ="User Name"><br><br>
+					<input class = "details" type ="password" id="pwd" name="userpwd" placeholder= "Password"><br><br>
+					<input type="checkbox" >
+					<label for="autologin">Remember Me?</label>
+					<button type ="submit" id="login">Login</button>
+					<br>
+					<p><a href=# id ="forgot">Forgot Password?</a></p>
+				</form>
+			</aside>
+			
+		</div>
+	</body>
